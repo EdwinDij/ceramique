@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créations en céramique | Maison Galet</title>
+  <meta name="description" content="Vaisselle, vases, luminaires et pièces uniques en grès&nbsp;: pièces disponibles, sur commande ou à refaire sur mesure.">
+  <link rel="canonical" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/creations.html">
+  <link rel="alternate" hreflang="fr" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/creations.html">
+  <link rel="alternate" hreflang="en" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/en/works.html">
+  <link rel="alternate" hreflang="x-default" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/creations.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Créations en céramique | Maison Galet">
+  <meta property="og:description" content="Vaisselle, vases, luminaires et pièces uniques en grès&nbsp;: pièces disponibles, sur commande ou à refaire sur mesure.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="theme-color" content="#3a2a22">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <p class="bandeau-demo">Site de démonstration réalisé par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a>, développeur web freelance. L'atelier est fictif.</p>
+
+  <header class="header">
+    <div class="conteneur header__inner">
+      <a class="logo" href="./" aria-label="Maison Galet, accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4C10 4 4 11 4 19s7 17 16 17 16-7 16-16S29 4 20 4z" fill="#dcbca7"/><path d="M12 18h16c0 6-3.5 9-8 9s-8-3-8-9z" fill="none" stroke="#3a2a22" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 14c1.5-1.2 3-1.2 4.5 0s3 1.2 4.5 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span><span class="logo__nom">Maison Galet</span><span class="logo__sous">Céramiques, Montreuil</span></span>
+      </a>
+
+      <button class="menu-bouton" type="button" popovertarget="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Menu
+      </button>
+
+      <!-- Menu : affiché en ligne sur ordinateur, ouvert en plein écran sur mobile via l'attribut popover (sans JavaScript) -->
+      <nav class="nav" id="menu" popover aria-label="Navigation principale">
+        <button class="nav__fermer" type="button" popovertarget="menu" popovertargetaction="hide">Fermer <span aria-hidden="true">✕</span></button>
+        <ul>
+          <li><a class="nav__lien" href="./">Univers</a></li>
+          <li><a class="nav__lien" href="creations.html" aria-current="page">Créations</a></li>
+          <li><a class="nav__lien" href="atelier.html">L'atelier</a></li>
+          <li><a class="nav__lien" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="lang" href="en/works.html" hreflang="en" lang="en"><span aria-hidden="true">EN</span><span class="sr-only">English version</span></a>
+        <a class="bouton bouton--plein" href="contact.html#commande">Commande sur-mesure</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <header class="entete-page">
+      <div class="conteneur">
+        <h1>Les créations</h1>
+        <p>Pièces disponibles à l'atelier, à commander dans votre émail, ou déjà parties chez quelqu'un. Les pièces vendues peuvent être refaites sur demande, jamais à l'identique.</p>
+      </div>
+    </header>
+
+    <section class="galerie" aria-label="Galerie des créations">
+      <div class="conteneur">
+        <!-- Filtres en CSS pur : chaque bouton radio masque les pièces des autres collections via :has() -->
+        <fieldset class="filtres">
+          <legend class="sr-only">Filtrer par collection</legend>
+          <label class="filtre"><input type="radio" name="collection" id="f-tout" checked><span>Tout</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-vaisselle"><span>Vaisselle</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-vases"><span>Vases</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-luminaires"><span>Luminaires</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-uniques"><span>Pièces uniques</span></label>
+        </fieldset>
+
+        <ul class="pieces">
+          <li data-collection="vaisselle">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Service d'assiettes en grès émaillé blanc.">
+                <span class="statut statut--commande">Sur commande</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Service Lune</span>
+                <span class="piece__details">Assiettes plates et creuses, Ø 22 et 26 cm, émail blanc lune</span>
+                <span class="piece__bas"><span class="piece__prix">À partir de 38 €</span><a href="contact.html#commande">Commander</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Vases ronds en grès chamotté.">
+                <span class="statut">Disponible</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Vase Dune</span>
+                <span class="piece__details">H 28 cm, grès chamotté, émail sable mat</span>
+                <span class="piece__bas"><span class="piece__prix">120 €</span><a href="contact.html#commande">Réserver</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="luminaires uniques">
+            <figure class="piece piece--vendue">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Lampe à poser au pied en céramique brune.">
+                <span class="statut statut--vendue">Vendue</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Lampe Galet</span>
+                <span class="piece__details">H 42 cm, grès brun noyer, abat-jour en lin</span>
+                <span class="piece__bas"><span class="piece__prix">240 €</span><a href="contact.html#commande">Commander une pièce similaire</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vaisselle">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Bols en céramique aux émaux naturels.">
+                <span class="statut">Disponible</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Bols Matin</span>
+                <span class="piece__details">Ø 14 cm, émail céladon, lot de deux</span>
+                <span class="piece__bas"><span class="piece__prix">58 € les deux</span><a href="contact.html#commande">Réserver</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases uniques">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Grande jarre en grès aux reflets bruns.">
+                <span class="statut">Pièce unique</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Jarre Racine</span>
+                <span class="piece__details">H 46 cm, grès noir, émail coulé</span>
+                <span class="piece__bas"><span class="piece__prix">380 €</span><a href="contact.html#commande">Réserver</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="luminaires">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Suspensions lumineuses au-dessus d'une table.">
+                <span class="statut statut--commande">Sur commande</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Suspension Coquille</span>
+                <span class="piece__details">Ø 30 cm, porcelaine fine, lumière diffuse</span>
+                <span class="piece__bas"><span class="piece__prix">190 €</span><a href="contact.html#commande">Commander</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vaisselle">
+            <figure class="piece piece--vendue">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Tasse en céramique remplie de café.">
+                <span class="statut statut--vendue">Vendue</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Tasses Céladon</span>
+                <span class="piece__details">20 cl, émail céladon brillant, série de six</span>
+                <span class="piece__bas"><span class="piece__prix">32 € pièce</span><a href="contact.html#commande">Commander une série</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Petits vases soliflores en céramique.">
+                <span class="statut">Disponible</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Soliflores Brindille</span>
+                <span class="piece__details">H 12 à 18 cm, trio d'émaux rosés</span>
+                <span class="piece__bas"><span class="piece__prix">75 € le trio</span><a href="contact.html#commande">Réserver</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="uniques">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Pièce en cours de tournage, encore humide.">
+                <span class="statut statut--commande">Sur commande</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Votre pièce</span>
+                <span class="piece__details">Forme, taille et émail choisis ensemble</span>
+                <span class="piece__bas"><span class="piece__prix">Sur devis</span><a href="contact.html#commande">Parler du projet</a></span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titre-cta">
+      <div class="conteneur">
+        <div class="cta">
+          <div>
+            <h2 id="titre-cta">Vous ne trouvez pas la pièce idéale&nbsp;?</h2>
+            <p>Les commandes sur mesure représentent la moitié du travail de l'atelier. Comptez quatre à huit semaines.</p>
+          </div>
+          <a class="bouton bouton--clair" href="contact.html#commande">Demander un devis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur">
+      <div class="footer__grille">
+        <div>
+          <p class="footer__signature">Maison Galet</p>
+          <p>Céramiques tournées à la main par Inès Garnier, à Montreuil.</p>
+        </div>
+        <div>
+          <h2>L'atelier-boutique</h2>
+          <address>34 rue de Paris<br>93100 Montreuil<br>Samedi 11 h – 18 h</address>
+        </div>
+        <div>
+          <h2>Suivre l'atelier</h2>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="mailto:bonjour@maisongalet.fr?subject=Lettre">Lettre de l'atelier (4 par an)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions de vente</a></li>
+            <li><a href="en/works.html" hreflang="en" lang="en">English version</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bas">
+        <p>© 2026 Maison Galet. Photos&nbsp;: Unsplash.</p>
+        <p>Site conçu par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

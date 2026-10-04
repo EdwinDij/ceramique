@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demande envoyée | Maison Galet</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#3a2a22">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <p class="bandeau-demo">Site de démonstration réalisé par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a>, développeur web freelance. L'atelier est fictif.</p>
+
+  <header class="header">
+    <div class="conteneur header__inner">
+      <a class="logo" href="./" aria-label="Maison Galet, accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4C10 4 4 11 4 19s7 17 16 17 16-7 16-16S29 4 20 4z" fill="#dcbca7"/><path d="M12 18h16c0 6-3.5 9-8 9s-8-3-8-9z" fill="none" stroke="#3a2a22" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 14c1.5-1.2 3-1.2 4.5 0s3 1.2 4.5 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span><span class="logo__nom">Maison Galet</span><span class="logo__sous">Céramiques, Montreuil</span></span>
+      </a>
+
+      <button class="menu-bouton" type="button" popovertarget="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Menu
+      </button>
+
+      <!-- Menu : affiché en ligne sur ordinateur, ouvert en plein écran sur mobile via l'attribut popover (sans JavaScript) -->
+      <nav class="nav" id="menu" popover aria-label="Navigation principale">
+        <button class="nav__fermer" type="button" popovertarget="menu" popovertargetaction="hide">Fermer <span aria-hidden="true">✕</span></button>
+        <ul>
+          <li><a class="nav__lien" href="./">Univers</a></li>
+          <li><a class="nav__lien" href="creations.html">Créations</a></li>
+          <li><a class="nav__lien" href="atelier.html">L'atelier</a></li>
+          <li><a class="nav__lien" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="lang" href="en/thanks.html" hreflang="en" lang="en"><span aria-hidden="true">EN</span><span class="sr-only">English version</span></a>
+        <a class="bouton bouton--plein" href="contact.html#commande">Commande sur-mesure</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="section merci">
+      <div class="conteneur">
+        <svg viewBox="0 0 80 80" width="88" height="88" aria-hidden="true"><path d="M40 8C22 8 10 22 10 38s13 34 30 34 30-14 30-32S58 8 40 8z" fill="#e8cfc2"/><path d="M27 41l9 9 18-19" fill="none" stroke="#3a2a22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h1 style="font-size: var(--taille-xl); margin-top: 1.5rem">Demande bien reçue</h1>
+        <p>Merci&nbsp;! Je vous réponds sous 48 heures, souvent avec quelques questions pour affiner le projet.</p>
+        <p><a class="bouton bouton--contour" href="./">Revenir à l'accueil</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur">
+      <div class="footer__grille">
+        <div>
+          <p class="footer__signature">Maison Galet</p>
+          <p>Céramiques tournées à la main par Inès Garnier, à Montreuil.</p>
+        </div>
+        <div>
+          <h2>L'atelier-boutique</h2>
+          <address>34 rue de Paris<br>93100 Montreuil<br>Samedi 11 h – 18 h</address>
+        </div>
+        <div>
+          <h2>Suivre l'atelier</h2>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="mailto:bonjour@maisongalet.fr?subject=Lettre">Lettre de l'atelier (4 par an)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions de vente</a></li>
+            <li><a href="en/thanks.html" hreflang="en" lang="en">English version</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bas">
+        <p>© 2026 Maison Galet. Photos&nbsp;: Unsplash.</p>
+        <p>Site conçu par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

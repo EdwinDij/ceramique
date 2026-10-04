@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commande sur mesure et contact | Maison Galet</title>
+  <meta name="description" content="Demandez un devis pour une commande de céramique sur mesure ou réservez un cours au tour à Montreuil.">
+  <link rel="canonical" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/contact.html">
+  <link rel="alternate" hreflang="fr" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/contact.html">
+  <link rel="alternate" hreflang="en" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/en/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Commande sur mesure et contact | Maison Galet">
+  <meta property="og:description" content="Demandez un devis pour une commande de céramique sur mesure ou réservez un cours au tour à Montreuil.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="theme-color" content="#3a2a22">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <p class="bandeau-demo">Site de démonstration réalisé par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a>, développeur web freelance. L'atelier est fictif.</p>
+
+  <header class="header">
+    <div class="conteneur header__inner">
+      <a class="logo" href="./" aria-label="Maison Galet, accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4C10 4 4 11 4 19s7 17 16 17 16-7 16-16S29 4 20 4z" fill="#dcbca7"/><path d="M12 18h16c0 6-3.5 9-8 9s-8-3-8-9z" fill="none" stroke="#3a2a22" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 14c1.5-1.2 3-1.2 4.5 0s3 1.2 4.5 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span><span class="logo__nom">Maison Galet</span><span class="logo__sous">Céramiques, Montreuil</span></span>
+      </a>
+
+      <button class="menu-bouton" type="button" popovertarget="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Menu
+      </button>
+
+      <!-- Menu : affiché en ligne sur ordinateur, ouvert en plein écran sur mobile via l'attribut popover (sans JavaScript) -->
+      <nav class="nav" id="menu" popover aria-label="Navigation principale">
+        <button class="nav__fermer" type="button" popovertarget="menu" popovertargetaction="hide">Fermer <span aria-hidden="true">✕</span></button>
+        <ul>
+          <li><a class="nav__lien" href="./">Univers</a></li>
+          <li><a class="nav__lien" href="creations.html">Créations</a></li>
+          <li><a class="nav__lien" href="atelier.html">L'atelier</a></li>
+          <li><a class="nav__lien" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="lang" href="en/contact.html" hreflang="en" lang="en"><span aria-hidden="true">EN</span><span class="sr-only">English version</span></a>
+        <a class="bouton bouton--plein" href="contact.html#commande">Commande sur-mesure</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <header class="entete-page">
+      <div class="conteneur">
+        <h1>Parlons de votre projet</h1>
+        <p>Une commande sur mesure, une inscription à un cours ou une simple question&nbsp;: je réponds à chaque message sous 48 heures.</p>
+      </div>
+    </header>
+
+    <section class="section section--sable" aria-label="Formulaire et informations pratiques">
+      <div class="conteneur contact__grille">
+        <!--
+          DÉMO : le formulaire mène à une page de confirmation (merci.html).
+          En production, remplacez action par l'URL de votre service de formulaire
+          (Formspree, Basin, Netlify Forms, votre backend…) et passez method="post".
+          Les blocs « commande » et « cours » s'affichent selon le type de demande grâce à :has(), sans JavaScript.
+        -->
+        <form class="formulaire" id="commande" action="merci.html" method="get">
+          <fieldset class="bloc">
+            <legend>Votre demande</legend>
+            <div class="pastilles">
+              <label class="pastille pastille--grande"><input type="radio" name="demande" id="demande-sur-mesure" value="sur-mesure" checked><span>Une commande sur mesure</span></label>
+              <label class="pastille pastille--grande"><input type="radio" name="demande" id="demande-atelier" value="cours"><span>Un cours au tour</span></label>
+              <label class="pastille pastille--grande"><input type="radio" name="demande" id="demande-question" value="question"><span>Une question</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="bloc bloc--sur-mesure">
+            <legend>Le projet<small>Plus vous êtes précis, plus le devis le sera.</small></legend>
+            <div class="champs">
+              <fieldset class="groupe">
+                <legend>Type de pièce</legend>
+                <div class="pastilles">
+                  <label class="pastille"><input type="checkbox" name="piece" value="vaisselle"><span>Vaisselle</span></label>
+                  <label class="pastille"><input type="checkbox" name="piece" value="vase"><span>Vase</span></label>
+                  <label class="pastille"><input type="checkbox" name="piece" value="luminaire"><span>Luminaire</span></label>
+                  <label class="pastille"><input type="checkbox" name="piece" value="unique"><span>Pièce unique</span></label>
+                  <label class="pastille"><input type="checkbox" name="piece" value="autre"><span>Autre</span></label>
+                </div>
+              </fieldset>
+              <div class="champ">
+                <label for="quantite">Nombre de pièces</label>
+                <input id="quantite" name="quantite" type="number" min="1" inputmode="numeric" placeholder="Ex. 24">
+              </div>
+              <div class="champ">
+                <label for="usage">Pour quel usage&nbsp;?</label>
+                <select id="usage" name="usage">
+                  <option value="">Choisir</option>
+                  <option>Chez moi</option>
+                  <option>Un cadeau</option>
+                  <option>Un restaurant ou un café</option>
+                  <option>Un mariage ou un événement</option>
+                  <option>Une boutique</option>
+                </select>
+              </div>
+              <fieldset class="groupe">
+                <legend>Émail souhaité</legend>
+                <div class="pastilles">
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="naturel"><span><span class="email email--naturel" aria-hidden="true"></span>Naturel sable</span></label>
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="lune"><span><span class="email email--lune" aria-hidden="true"></span>Blanc lune</span></label>
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="celadon"><span><span class="email email--celadon" aria-hidden="true"></span>Céladon</span></label>
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="rose"><span><span class="email email--rose" aria-hidden="true"></span>Rose argile</span></label>
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="noyer"><span><span class="email email--noyer" aria-hidden="true"></span>Brun noyer</span></label>
+                  <label class="pastille"><input type="radio" name="email-ceramique" value="libre"><span><span class="email email--surprise" aria-hidden="true"></span>Je vous laisse choisir</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="groupe">
+                <legend>Budget indicatif</legend>
+                <div class="pastilles">
+                  <label class="pastille"><input type="radio" name="budget" value="moins-150"><span>Moins de 150 €</span></label>
+                  <label class="pastille"><input type="radio" name="budget" value="150-400"><span>150 à 400 €</span></label>
+                  <label class="pastille"><input type="radio" name="budget" value="400-1000"><span>400 à 1 000 €</span></label>
+                  <label class="pastille"><input type="radio" name="budget" value="plus-1000"><span>Plus de 1 000 €</span></label>
+                </div>
+              </fieldset>
+              <div class="champ">
+                <label for="delai">Pour quand&nbsp;?</label>
+                <select id="delai" name="delai">
+                  <option value="">Choisir</option>
+                  <option>Pas pressé</option>
+                  <option>Dans 2 à 3 mois</option>
+                  <option>Dans moins de 2 mois</option>
+                  <option>Date précise, je l'indique en message</option>
+                </select>
+              </div>
+              <div class="champ">
+                <label for="inspiration">Une image d'inspiration</label>
+                <input id="inspiration" name="inspiration" type="url" placeholder="Lien Pinterest, Instagram…" aria-describedby="inspiration-erreur">
+                <span class="champ__erreur" id="inspiration-erreur">Collez un lien complet, commençant par https://</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="bloc bloc--atelier">
+            <legend>Le cours<small>Les places sont confirmées par e-mail.</small></legend>
+            <div class="champs">
+              <div class="champ champ--large">
+                <label for="session">Date</label>
+                <select id="session" name="session">
+                  <option value="">Choisir une date</option>
+                  <option>Sam. 17 oct., initiation au tour (2 places)</option>
+                  <option>Sam. 25 et dim. 26 oct., week-end tournage (3 places)</option>
+                  <option>Sam. 7 nov., initiation au tour (liste d'attente)</option>
+                  <option>Sam. 21 nov., initiation au tour (4 places)</option>
+                  <option>Atelier duo, date à convenir</option>
+                  <option>Bon cadeau</option>
+                </select>
+              </div>
+              <div class="champ">
+                <label for="personnes">Nombre de personnes</label>
+                <select id="personnes" name="personnes">
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                </select>
+              </div>
+              <fieldset class="groupe">
+                <legend>Votre niveau</legend>
+                <div class="pastilles">
+                  <label class="pastille"><input type="radio" name="niveau" value="debutant" checked><span>Jamais touché la terre</span></label>
+                  <label class="pastille"><input type="radio" name="niveau" value="bases"><span>Quelques bases</span></label>
+                  <label class="pastille"><input type="radio" name="niveau" value="regulier"><span>Je pratique déjà</span></label>
+                </div>
+              </fieldset>
+            </div>
+          </fieldset>
+
+          <fieldset class="bloc">
+            <legend>Vos coordonnées</legend>
+            <div class="champs">
+              <div class="champ">
+                <label for="prenom">Prénom *</label>
+                <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="champ">
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" autocomplete="family-name">
+              </div>
+              <div class="champ">
+                <label for="email">E-mail *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erreur">
+                <span class="champ__erreur" id="email-erreur">Indiquez une adresse du type nom@exemple.fr.</span>
+              </div>
+              <div class="champ">
+                <label for="tel">Téléphone</label>
+                <input id="tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="champ champ--large">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Racontez-moi votre idée, votre lieu, vos envies…"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="consentement">
+            <input id="rgpd" name="rgpd" type="checkbox" required>
+            <label for="rgpd">J'accepte que ces informations soient utilisées pour répondre à ma demande. Elles ne sont jamais partagées. *</label>
+          </p>
+          <button class="bouton bouton--plein" type="submit">Envoyer ma demande</button>
+        </form>
+
+        <aside class="cote" aria-label="Informations pratiques">
+          <div class="encart">
+            <h2>Comment se passe une commande</h2>
+            <ol class="deroule">
+              <li><p><strong>On échange</strong><span>Par message ou à l'atelier, pour préciser formes, usages et émaux.</span></p></li>
+              <li><p><strong>Vous recevez un devis</strong><span>Sous une semaine, avec un prototype si besoin.</span></p></li>
+              <li><p><strong>Acompte de 30 %</strong><span>La fabrication démarre à réception de l'acompte.</span></p></li>
+              <li><p><strong>Fabrication et livraison</strong><span>Quatre à huit semaines, retrait à l'atelier ou expédition soignée.</span></p></li>
+            </ol>
+          </div>
+
+          <div class="encart">
+            <h2>L'atelier-boutique</h2>
+            <address>34 rue de Paris, 93100 Montreuil<br>Métro Croix de Chavaux (ligne 9)</address>
+            <p><a href="mailto:bonjour@maisongalet.fr">bonjour@maisongalet.fr</a><br><a href="tel:+33612345678">06 12 34 56 78</a></p>
+            <table class="horaires">
+              <caption class="sr-only">Horaires d'ouverture</caption>
+              <tbody>
+                <tr><th scope="row">Samedi</th><td>11 h – 18 h</td></tr>
+                <tr><th scope="row">Mercredi</th><td>14 h – 18 h</td></tr>
+                <tr><th scope="row">Autres jours</th><td>Sur rendez-vous</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="plan">
+            <!-- Plan illustré en SVG : aucun service tiers, aucun cookie -->
+            <svg viewBox="0 0 400 220" role="img" aria-label="Plan d'accès&nbsp;: l'atelier est rue de Paris à Montreuil, à deux minutes du métro Croix de Chavaux.">
+              <rect width="400" height="220" fill="#f3e9df"/>
+              <path d="M300 30c40-10 80 10 90 45s-20 60-55 55-60-30-55-60 10-35 20-40z" fill="#dfe0c8"/>
+              <text x="318" y="92" font-family="Instrument Sans, sans-serif" font-size="11" fill="#575a2e">Parc</text>
+              <g stroke="#fbf7f2" stroke-width="10" fill="none" stroke-linecap="round">
+                <path d="M0 120 C 120 110, 260 135, 400 150"/><path d="M180 0 C 185 80, 175 150, 190 220"/><path d="M40 0 L 120 220"/>
+              </g>
+              <text x="250" y="160" font-family="Instrument Sans, sans-serif" font-size="11" fill="#6e5a4e" transform="rotate(5 250 160)">Rue de Paris</text>
+              <circle cx="186" cy="118" r="8" fill="#575a2e"/><text x="200" y="104" font-family="Instrument Sans, sans-serif" font-size="11" fill="#3a2a22">M Croix de Chavaux</text>
+              <g transform="translate(118 116)">
+                <path d="M0-16c-9 0-14 6-14 13s7 12 14 12 14-5 14-12S9-16 0-16z" fill="#dcbca7"/>
+                <circle cy="-3" r="5" fill="#3a2a22"/>
+              </g>
+            </svg>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=34+rue+de+Paris+93100+Montreuil" rel="noopener">Ouvrir l'itinéraire dans Maps <span aria-hidden="true">↗</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur">
+      <div class="footer__grille">
+        <div>
+          <p class="footer__signature">Maison Galet</p>
+          <p>Céramiques tournées à la main par Inès Garnier, à Montreuil.</p>
+        </div>
+        <div>
+          <h2>L'atelier-boutique</h2>
+          <address>34 rue de Paris<br>93100 Montreuil<br>Samedi 11 h – 18 h</address>
+        </div>
+        <div>
+          <h2>Suivre l'atelier</h2>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="mailto:bonjour@maisongalet.fr?subject=Lettre">Lettre de l'atelier (4 par an)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions de vente</a></li>
+            <li><a href="en/contact.html" hreflang="en" lang="en">English version</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bas">
+        <p>© 2026 Maison Galet. Photos&nbsp;: Unsplash.</p>
+        <p>Site conçu par <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

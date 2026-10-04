@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ceramic works | Maison Galet</title>
+  <meta name="description" content="Stoneware tableware, vases, lamps and one-of-a-kind pieces: available now, made to order, or remade to your wishes.">
+  <link rel="canonical" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/en/works.html">
+  <link rel="alternate" hreflang="fr" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/creations.html">
+  <link rel="alternate" hreflang="en" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/en/works.html">
+  <link rel="alternate" hreflang="x-default" href="https://VOTRE-PSEUDO.github.io/demos/ceramique/creations.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ceramic works | Maison Galet">
+  <meta property="og:description" content="Stoneware tableware, vases, lamps and one-of-a-kind pieces: available now, made to order, or remade to your wishes.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75">
+  <meta property="og:locale" content="en_GB">
+  <meta name="theme-color" content="#3a2a22">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Skip to content</a>
+  <p class="bandeau-demo">Demo website by <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a>, freelance web developer. The studio is fictional.</p>
+
+  <header class="header">
+    <div class="conteneur header__inner">
+      <a class="logo" href="./" aria-label="Maison Galet, home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4C10 4 4 11 4 19s7 17 16 17 16-7 16-16S29 4 20 4z" fill="#dcbca7"/><path d="M12 18h16c0 6-3.5 9-8 9s-8-3-8-9z" fill="none" stroke="#3a2a22" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 14c1.5-1.2 3-1.2 4.5 0s3 1.2 4.5 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span><span class="logo__nom">Maison Galet</span><span class="logo__sous">Ceramics, Montreuil</span></span>
+      </a>
+
+      <button class="menu-bouton" type="button" popovertarget="menu" aria-label="Open the menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Menu
+      </button>
+
+      <!-- Menu : affiché en ligne sur ordinateur, ouvert en plein écran sur mobile via l'attribut popover (sans JavaScript) -->
+      <nav class="nav" id="menu" popover aria-label="Main navigation">
+        <button class="nav__fermer" type="button" popovertarget="menu" popovertargetaction="hide">Close <span aria-hidden="true">✕</span></button>
+        <ul>
+          <li><a class="nav__lien" href="./">Story</a></li>
+          <li><a class="nav__lien" href="works.html" aria-current="page">Works</a></li>
+          <li><a class="nav__lien" href="studio.html">Studio</a></li>
+          <li><a class="nav__lien" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="lang" href="../creations.html" hreflang="fr" lang="fr"><span aria-hidden="true">FR</span><span class="sr-only">Version française</span></a>
+        <a class="bouton bouton--plein" href="contact.html#commande">Custom order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <header class="entete-page">
+      <div class="conteneur">
+        <h1>The work</h1>
+        <p>Pieces available at the studio, made to order in your glaze, or already gone to a new home. Sold pieces can be remade on request, never identically.</p>
+      </div>
+    </header>
+
+    <section class="galerie" aria-label="Gallery of works">
+      <div class="conteneur">
+        <!-- Pure CSS filters: each radio button hides other collections via :has() -->
+        <fieldset class="filtres">
+          <legend class="sr-only">Filter by collection</legend>
+          <label class="filtre"><input type="radio" name="collection" id="f-tout" checked><span>All</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-vaisselle"><span>Tableware</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-vases"><span>Vases</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-luminaires"><span>Lighting</span></label>
+          <label class="filtre"><input type="radio" name="collection" id="f-uniques"><span>One of a kind</span></label>
+        </fieldset>
+
+        <ul class="pieces">
+          <li data-collection="vaisselle">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="A set of white glazed stoneware plates.">
+                <span class="statut statut--commande">Made to order</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Moon dinnerware</span>
+                <span class="piece__details">Dinner and soup plates, Ø 22 and 26 cm, moon-white glaze</span>
+                <span class="piece__bas"><span class="piece__prix">From €38</span><a href="contact.html#commande">Order</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Round grogged stoneware vases.">
+                <span class="statut">Available</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Dune vase</span>
+                <span class="piece__details">H 28 cm, grogged stoneware, matte sand glaze</span>
+                <span class="piece__bas"><span class="piece__prix">€120</span><a href="contact.html#commande">Reserve</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="luminaires uniques">
+            <figure class="piece piece--vendue">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Table lamp with a brown ceramic base.">
+                <span class="statut statut--vendue">Sold</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Pebble lamp</span>
+                <span class="piece__details">H 42 cm, walnut-brown stoneware, linen shade</span>
+                <span class="piece__bas"><span class="piece__prix">€240</span><a href="contact.html#commande">Order a similar piece</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vaisselle">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Ceramic bowls in natural glazes.">
+                <span class="statut">Available</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Morning bowls</span>
+                <span class="piece__details">Ø 14 cm, celadon glaze, set of two</span>
+                <span class="piece__bas"><span class="piece__prix">€58 for two</span><a href="contact.html#commande">Reserve</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases uniques">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Large stoneware jar with brown highlights.">
+                <span class="statut">One of a kind</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Root jar</span>
+                <span class="piece__details">H 46 cm, black stoneware, poured glaze</span>
+                <span class="piece__bas"><span class="piece__prix">€380</span><a href="contact.html#commande">Reserve</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="luminaires">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Pendant lights above a table.">
+                <span class="statut statut--commande">Made to order</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Shell pendant</span>
+                <span class="piece__details">Ø 30 cm, thin porcelain, soft diffused light</span>
+                <span class="piece__bas"><span class="piece__prix">€190</span><a href="contact.html#commande">Order</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vaisselle">
+            <figure class="piece piece--vendue">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Ceramic cup filled with coffee.">
+                <span class="statut statut--vendue">Sold</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Celadon cups</span>
+                <span class="piece__details">20 cl, glossy celadon glaze, set of six</span>
+                <span class="piece__bas"><span class="piece__prix">€32 each</span><a href="contact.html#commande">Order a set</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="vases">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="Small ceramic bud vases.">
+                <span class="statut">Available</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Twig bud vases</span>
+                <span class="piece__details">H 12 to 18 cm, trio of pink glazes</span>
+                <span class="piece__bas"><span class="piece__prix">€75 for three</span><a href="contact.html#commande">Reserve</a></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li data-collection="uniques">
+            <figure class="piece">
+              <div class="piece__visuel">
+                <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=700&h=875&q=75" width="700" height="875" loading="lazy" alt="A piece being thrown, still wet.">
+                <span class="statut statut--commande">Made to order</span>
+              </div>
+              <figcaption>
+                <span class="piece__nom">Your piece</span>
+                <span class="piece__details">Shape, size and glaze chosen together</span>
+                <span class="piece__bas"><span class="piece__prix">On quote</span><a href="contact.html#commande">Talk about your project</a></span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titre-cta">
+      <div class="conteneur">
+        <div class="cta">
+          <div>
+            <h2 id="titre-cta">Can't find the perfect piece?</h2>
+            <p>Custom orders make up half of the studio's work. Allow four to eight weeks.</p>
+          </div>
+          <a class="bouton bouton--clair" href="contact.html#commande">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur">
+      <div class="footer__grille">
+        <div>
+          <p class="footer__signature">Maison Galet</p>
+          <p>Wheel-thrown ceramics by Inès Garnier, in Montreuil near Paris.</p>
+        </div>
+        <div>
+          <h2>Studio shop</h2>
+          <address>34 rue de Paris<br>93100 Montreuil, France<br>Saturday 11:00–18:00</address>
+        </div>
+        <div>
+          <h2>Follow the studio</h2>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="mailto:bonjour@maisongalet.fr?subject=Lettre">Studio letter (4 a year)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Information</h2>
+          <ul>
+            <li><a href="#">Legal notice</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of sale</a></li>
+            <li><a href="../creations.html" hreflang="fr" lang="fr">Version française</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bas">
+        <p>© 2026 Maison Galet. Photos: Unsplash.</p>
+        <p>Website by <a href="https://edwindijeont-dev.fr">Edwin Dijeont</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
